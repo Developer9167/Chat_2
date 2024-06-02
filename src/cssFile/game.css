@@ -113,6 +113,7 @@
 .search-user-for-game input{
     padding: 5px;
     font-size: 20px;
+    width:90%;
     outline: 2px black solid ;
     border:none;
     border-radius: 3px;

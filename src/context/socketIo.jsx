@@ -12,7 +12,7 @@ const SocketIoProvider = ({ children }) => {
     const { authuser } = useAuth();
     useEffect(() => {
         if (authuser) {
-            const socket = io("http://localhost:3001/", {
+            const socket = io(import.meta.env.VITE_APP_API_URL, {
                 query: {
                     userId: authuser.id
                 }
